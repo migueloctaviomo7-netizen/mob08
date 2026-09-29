@@ -1,0 +1,29 @@
+<div class="card-app">
+
+    <h2>🚀 Pedido com Localização</h2>
+    <p>Preencha, capture o GPS e envie por WhatsApp.</p>
+
+    <label>👤 Seu nome</label>
+    <input type="text" id="appNome" value="João Silva" placeholder="Digite seu nome">
+
+    <label>📝 O que você precisa?</label>
+    <textarea id="appPedido" rows="3" placeholder="Descreva seu pedido...">Quero um fone bluetooth com entrega urgente.</textarea>
+
+    <label>📞 WhatsApp do destino</label>
+    <input type="tel" id="appZap" value="5532999999999" placeholder="5532999999999" inputmode="numeric">
+
+    <button class="btn-local" onclick="capturarGpsApp()">📍 Capturar Minha Localização</button>
+
+    <div class="local-app" id="appGps">
+        <span class="vazio">Localização não capturada</span>
+    </div>
+
+    <button class="btn-enviar" onclick="enviarPedidoZap()">💬 Enviar Pedido por WhatsApp</button>
+    <button class="btn-compartilhar" onclick="compartilharPedido()">📤 Compartilhar Pedido</button>
+
+    <div class="resultado-app" id="resultadoApp">
+        <span class="vazio">Aguardando ação</span>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </div>
+</div>
